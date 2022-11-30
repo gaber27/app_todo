@@ -6,24 +6,27 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
-public class login_activity extends AppCompatActivity {
+public class create_acc_activity extends AppCompatActivity {
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.activity_create_acc);
         getSupportActionBar().hide();
         Button start = (Button) findViewById(R.id.c11);
-        TextView cre= (TextView) findViewById(R.id.create);
+        ImageButton arr = (ImageButton) findViewById(R.id.arrowbackk);
         start.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 go();
             }
 
+
         });
-        cre.setOnClickListener(new View.OnClickListener() {
+        arr.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 create();
@@ -31,23 +34,16 @@ public class login_activity extends AppCompatActivity {
 
         });
     }
+public  void create()
+    {
+        Intent intent = new Intent(this,login_activity.class);
+        startActivity(intent);
+
+    }
+
     public void go()
     {
         Intent intent = new Intent(this,home_activity.class);
         startActivity(intent);
     }
-
-
-    public  void create()
-    {
-        Intent intent = new Intent(this,create_acc_activity.class);
-        startActivity(intent);
-
-    }
-
-
-
-
-
-
-    }
+}

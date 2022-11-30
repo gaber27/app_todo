@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
+    android:gravity="right"
     android:orientation="vertical">
 
     <LinearLayout
@@ -13,11 +14,24 @@
         android:orientation="vertical"
         android:padding="16dp">
 
-        <com.google.android.material.textfield.TextInputLayout
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="51dp"
-            android:backgroundTint="#A1000000"
-            android:hint="gaber@gmail.com" />
+            android:layout_height="45dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/arrowbackk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:backgroundTint="#FFFFFF"
+                app:srcCompat="@drawable/arrow_left"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="67dp" />
 
         <TextView
             android:id="@+id/textView5"
@@ -25,7 +39,7 @@
             android:layout_height="wrap_content"
             android:paddingTop="8dp"
             android:paddingEnd="8dp"
-            android:text="Welcome Back 👋"
+            android:text="Create Account"
             android:textColor="#000000"
             android:textSize="18sp"
             android:textStyle="bold" />
@@ -42,6 +56,26 @@
             android:textSize="16sp" />
 
         <TextView
+            android:id="@+id/textView12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            android:paddingEnd="16dp"
+            android:text="Full Name"
+            android:textColor="#000000" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="#08000000"
+            android:gravity="clip_vertical"
+            android:hint=" gaber tarek"
+            android:inputType="textPersonName"
+            android:paddingTop="24dp" />
+
+        <TextView
             android:id="@+id/textView9"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -50,19 +84,22 @@
             android:text="Email"
             android:textColor="#000000" />
 
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editText5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="#08000000"
+            android:gravity="clip_vertical"
+            android:hint="gaber27@gmail.com"
+            android:inputType="none|textEmailAddress"
+            android:paddingTop="24dp" />
+
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="#A1000000"
-            android:hint="gaber@gmail.com">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="12dp"
-                android:background="#08000000"
-                android:paddingTop="24dp" />
-        </com.google.android.material.textfield.TextInputLayout>
+            android:hint="gaber@gmail.com" />
 
         <TextView
             android:id="@+id/textView10"
@@ -84,19 +121,6 @@
             android:inputType="textPassword"
             android:paddingTop="24dp" />
 
-        <TextView
-            android:id="@+id/textView6"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:clickable="true"
-            android:gravity="end"
-            android:paddingTop="0dp"
-            android:paddingEnd="0dp"
-            android:text="Forgot Password?"
-            android:textColor="#000000"
-            tools:ignore="TouchTargetSizeCheck" />
-
         <Button
             android:id="@+id/c11"
             android:layout_width="366dp"
@@ -108,38 +132,11 @@
             android:padding="0dp"
             android:paddingStart="8dp"
             android:paddingEnd="8dp"
-            android:text="Login"
+            android:text="Create Account "
             android:textColor="#FFFFFF"
             app:cornerRadius="12dp">
 
         </Button>
-
-        <LinearLayout
-            android:layout_width="396dp"
-            android:layout_height="56dp"
-            android:layout_gravity="center"
-            android:gravity="center"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/textView13"
-                android:layout_width="wrap_content"
-                android:layout_height="42dp"
-                android:layout_weight="0"
-                android:paddingStart="8dp"
-                android:text="Don’t have an account?" />
-
-            <TextView
-                android:id="@+id/create"
-                android:layout_width="128dp"
-                android:layout_height="42dp"
-                android:layout_weight="0"
-                android:clickable="true"
-
-                android:text="  Sign up"
-                android:textColor="#06ADDB"
-                tools:ignore="TouchTargetSizeCheck" />
-        </LinearLayout>
 
         <!-- orange background color for the time picker -->
 
