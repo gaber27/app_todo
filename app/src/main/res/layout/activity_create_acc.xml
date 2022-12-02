@@ -65,7 +65,7 @@
             android:textColor="#000000" />
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/editText"
+            android:id="@+id/fullname"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
@@ -85,7 +85,7 @@
             android:textColor="#000000" />
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/editText5"
+            android:id="@+id/email_new"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
@@ -111,7 +111,7 @@
             android:textColor="#000000" />
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/editText2"
+            android:id="@+id/password_new"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
